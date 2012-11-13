@@ -81,6 +81,7 @@
 </head>
 <body>
     <div class="row">
+        
         <header class="twelve columns">
             <a href="http://modeconkey.com/minecraft"><h2 class="text-center six columns title">Minecraft Hub</h2></a>
 
