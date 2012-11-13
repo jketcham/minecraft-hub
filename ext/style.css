@@ -1,0 +1,221 @@
+/* --------------- SITE WIDE CSS --------------- */
+h1 {
+	font-family: 'Press Start 2P', cursive;
+}
+h2 {
+	font-family: 'Fredoka One', cursive;	
+}
+body {
+	background-color: whiteSmoke; 
+	font-family: 'Open Sans', sans-serif;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.top {
+	text-align: center;
+}
+::-moz-selection {
+	color: #fff;
+	color: rgba(255, 255, 255, .85);
+	background: #45c0aa;
+}
+::selection {
+	color: #fff;
+	color: rgba(255, 255, 255, .85);
+	background: #45c0aa;
+}
+/* For the menu */
+
+#menu, #menu ul {
+		/* Remove bullet points and add fonts */
+		list-style: none;
+		text-align: center;
+		width: 700px;
+		top: 50px;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	
+	#menu li {
+		/* Horizontal menu, not vertical. Then just a little extra positioning */
+		float: left;
+		position: relative;
+		overflow: hidden;	
+		margin-right: 20px;
+		height: 40px;
+	}
+	
+	#menu li a {
+		/* Clear up the links and position them correctly */
+		color: #000;
+		padding: 0 15px;
+		text-decoration: none;
+		display: block;
+		position: relative;
+		height: 40px;
+		padding: 10px 15px;
+		font-weight: bold;
+		/* Quick animations to animate the anchor */
+		-webkit-transition: all 0.2s ease-in;
+		-moz-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in;
+	}
+	
+	#menu li span {
+		/* Default width of the span (acts as border). Z-index so it appears behind the words. */
+		width: 6px;
+		z-index: -1;
+		/* Position it absolutely so it goes where we want it to go */
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		/* Animation again, because both the span and the anchor will be animated */
+		-webkit-transition: all 0.4s ease-in;
+		-moz-transition: all 0.4s ease-in;
+		-ms-transition: all 0.4s ease-in;
+	}
+	
+	#menu li:nth-of-type(1) span { background: #c04545; }
+	#menu li:nth-of-type(2) span { background: #c06b45; }
+	#menu li:nth-of-type(3) span { background: #88c045; }
+	#menu li:nth-of-type(4) span { background: #48c045; }
+	#menu li:nth-of-type(5) span { background: #45c0aa; }
+	#menu li:nth-of-type(6) span { background: #4576c0; }
+	#menu li:nth-of-type(7) span { background: #7945c0; }
+	
+	#menu li:hover > span {
+		min-width: 100%;
+	}
+
+	#menu li a:hover {
+		color: #fff;
+	}
+	
+	#menu .sub-menu li {
+		padding: 10px;
+		float: left;
+	}
+	
+	#menu li:hover {
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	}
+.hover {
+	color: #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+	text-decoration: none;  
+    -webkit-transition: 700ms linear 0s;  
+    -moz-transition: 700ms linear 0s;  
+    -o-transition: 700ms linear 0s;  
+    transition: 700ms linear 0s;  
+    outline: 0 none; 	
+}
+.hover:hover {
+    text-shadow: 2px 2px 10px #189fb7;	
+}
+footer {
+	position: relative;
+	margin-top: -40px;
+	height: 26px;
+	text-align: center;
+	color: #444;
+	padding-top: 14px;
+	padding-bottom: 5px;
+	clear: both;
+	font-size: 10px;
+	text-decoration: none;
+}
+.list {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 75px;
+}
+a {
+	color:#994D1A;
+	text-decoration:none;
+}
+a:hover {
+	color:#000000;
+}
+
+/* --------------- START HOME PAGE CSS --------------- */
+.header {
+	width: 1022px;
+	height: 347px;
+	position: relative;
+	margin: 0 auto 0 auto;
+	text-shadow: 1px 1px 5px #FFE5A1;
+    filter: dropshadow(color=#FFE5A1, offx=1, offy=1);
+	-webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+.header img {
+	-webkit-border-radius: 15px;
+    border-radius: 15px;
+    width: 1022px;
+	height: 347px;
+}
+#deck {
+	display: block;
+	position: absolute;
+	width: 300px;
+	top: 130px; /* Changed from 167 */
+	left: 519px;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	font-weight: 600;
+}
+#headline {
+	text-align: center;
+	width: 400px;
+	height: 84px;
+	position: absolute;
+	top: 51px;
+	left: 514px;
+}
+.content {
+	display: block;
+	width: 1022px;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+#connectBox {
+	display: block;
+	width: 288px;
+	float: left;
+	margin: 0 23px 0 0;
+	font-size: 12px;
+	line-height: 18px;	
+}
+#siteNews {
+	display: block;
+	width: 371px;
+	float: left;
+	font-size: 15px;
+	line-height: 24px;
+	margin: 0 24px 0 0;
+	padding: 0 25px;	
+}
+#siteShout {
+	display: block;
+	width: 261px;
+	float: left;
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 600;	
+	
+	background-color: #adadad;
+	border: 2px solid #999999;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	opacity: 0.65;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 65);
+	filter: alpha(opacity = 65);
+}
+#siteShout p {
+	font-style: italic;	
+}
+/* ---------------  END HOME PAGE CSS --------------- */

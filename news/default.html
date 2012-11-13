@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>News</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic|Press+Start+2P|Open+Sans:400italic,400,600|Londrina+Solid|Fredoka+One|Chewy' rel='stylesheet' type='text/css'>
+
+	
+<style type="text/css">
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 1px 1px 5px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+body {
+	/* background-image:url('http://www.modeconkey.com/minecraft/ext/images/back.png');
+	background-repeat:repeat; */
+	background-color: whiteSmoke;
+}
+.header {
+	text-align: center;
+}
+.header p {	
+	font-family: 'Ubuntu Mono', sans-serif;
+	font-style: italic;
+}
+.headline {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+.content {
+	padding-top: 25px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+.content p {
+	font-family: 'Open Sans', sans-serif;
+}
+.footer {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 5px;
+	border-top: 1px solid #DDD;
+	font-size: 10px;
+	text-decoration: none;
+}
+.footer li {
+	display:inline;
+    margin-right:15px;
+}
+.list {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 100px;
+}
+
+/* For the menu */
+
+#menu, #menu ul {
+		/* Remove bullet points and add fonts */
+		list-style: none;
+		text-align: center;
+		width: 700px;
+		top: 50px;
+		/* margin: 0 auto; */
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	
+	#menu li {
+		/* Horizontal menu, not vertical. Then just a little extra positioning */
+		float: left;
+		position: relative;
+		overflow: hidden;	
+		margin-right: 20px;
+		height: 40px;
+		
+	}
+	
+	#menu li a {
+		/* Clear up the links and position them correctly */
+		color: #000;
+		padding: 0 15px;
+		text-decoration: none;
+		display: block;
+		position: relative;
+		height: 40px;
+		padding: 10px 15px;
+		font-weight: bold;
+		/* Quick animations to animate the anchor */
+		-webkit-transition: all 0.2s ease-in;
+		-moz-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in;
+	}
+	
+	#menu li span {
+		/* Default width of the span (acts as border). Z-index so it appears behind the words. */
+		width: 6px;
+		z-index: -1;
+		/* Position it absolutely so it goes where we want it to go */
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		/* Animation again, because both the span and the anchor will be animated */
+		-webkit-transition: all 0.4s ease-in;
+		-moz-transition: all 0.4s ease-in;
+		-ms-transition: all 0.4s ease-in;
+	}
+	
+	#menu li:nth-of-type(1) span { background: #c04545; }
+	#menu li:nth-of-type(2) span { background: #c06b45; }
+	#menu li:nth-of-type(3) span { background: #88c045; }
+	#menu li:nth-of-type(4) span { background: #48c045; }
+	#menu li:nth-of-type(5) span { background: #45c0aa; }
+	#menu li:nth-of-type(6) span { background: #4576c0; }
+	#menu li:nth-of-type(7) span { background: #7945c0; }
+	
+	#menu li:hover > span {
+		min-width: 100%;
+	}
+
+	#menu li a:hover {
+		color: #fff;
+	}
+	
+	#menu .sub-menu li {
+		padding: 10px;
+		float: left;
+	}
+	
+	#menu li:hover {
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	}
+</style>
+	
+</head>
+<body>
+	<div class="header">
+<h1>Minecraft Hub</h1>
+</div>
+
+<div class="list"
+<ul id="menu">
+    <li>
+        <a href="http://www.modeconkey.com/minecraft">
+            HOME
+        </a>
+        <span></span>
+    </li>
+    <li>
+        <a href="http://www.modeconkey.com/minecraft/view_server.php?sid=0">
+            SERVER
+        </a>
+        <span></span>
+    </li>
+    <li>
+        <a href="http://www.modeconkey.com/minecraft/news">
+            NEWS
+        </a>
+        <span></span>
+    </li>
+    <li>
+        <a href="http://www.modeconkey.com/minecraft/gallery">
+            GALLERY
+        </a>
+        <span></span>
+    </li>
+    <li>
+    	<a href="http://www.modeconkey.com/forum/">
+            FORUM
+        </a>
+        <span></span>
+    </li>
+    <li>
+    	<a href="http://www.facebook.com/groups/tylersmcserver/">
+            FACEBOOK
+        </a>
+        <span></span>
+    </li>
+</ul>  <!-- .menu -->
+</div> <!-- .list -->
+<p style="text-align:center">This page is under construction.  Expect awesomeness to be here soon! (news)</p>
+
+<div class="footer">
+<ul>
+<li id="italic">Created by Jack Ketcham</li>
+<li><a href="http://modeconkey.com/minecraft/about">About</a></li>
+<li><a href="http://modeconkey.com/minecraft/problems">Problems</a></li>
+<li><a href="http://modeconkey.com/minecraft/contact">Contact</a></li>
+</ul>
+<!-- This website is best viewed through an <a href="http://ismybrowseruptodate.com/">up-to-date browser</a> (for HTML5 and CSS3 goodies!) -->
+</div>
+</body>
+</html>

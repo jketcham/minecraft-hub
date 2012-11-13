@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<title>Minecraft Hub</title>
+	<meta name="viewport" content="width=device-width" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
+	<script src="ext/js/jquery.fittext.js"></script>
+	<script src="ext/js/modernizr.foundation.js"></script>
+	<script src="ext/js/jquery.foundation.navigation.js"></script>
+	<script src="ext/js/jquery.foundation.orbit.js"></script>
+
+	<link rel="stylesheet" href="ext/css/foundation.css" />
+	<link rel="stylesheet" href="ext/css/app.css" />
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans:400|Fredoka+One' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+	       $("#featured").orbit({
+		       	animation: 'fade',
+		       	animationSpeed: 1000, 
+		       	timer: true, 
+		       	directionalNav: false,
+		       	advanceSpeed: 5000
+	       });
+	   	});
+	   	$(document).foundationNavigation();
+	</script>
+
+	<style type="text/css">
+	#featured { 
+		background:  center center #f4f4f4; height: 414px; 
+	}
+	#featured img { 
+		display: none; 
+	}
+	#featured.orbit { 
+		background: none; 
+	}
+	#featured.orbit img { 
+		display: block; 
+	}
+	.panel.callout {
+		color: rgb(34, 34, 34);
+		text-align: center;
+	}
+	.panel.callout a:hover {
+		color: black;
+	}
+	#siteShout p {
+		font-size: 18px;
+		font-style: italic;
+	}
+	#siteShout a {
+		font-weight: bold;
+	}
+	#ip {
+		font-weight: bold;
+	}
+	.widget ul {
+		line-height: 2;
+	}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<header class="twelve columns">
+			<a href="http://modeconkey.com/minecraft"><h2 class="text-center six columns title">Minecraft Hub</h2></a>
+			<script type="text/javascript">
+				$(".title").fitText(1.5, {maxFontSize: '40px' });
+			</script>
+			<nav class="six columns">
+				<ul class="nav-bar">
+					<li>
+						<a class="current" href="http://www.modeconkey.com/minecraft">Home</a>
+					</li>
+					<li>
+						<a href="http://www.modeconkey.com/minecraft/view_server.php">Server</a>
+					</li>
+					<li>
+						<a href="http://news.modeconkey.com/">News</a>
+					</li>
+					<li class="has-flyout">
+						<a href="http://www.modeconkey.com/minecraft/gallery">Gallery</a>
+						<a href="#" class="flyout-toggle"><span> </span></a>
+						<ul class="flyout">
+							<li><a href="/minecraft/gallery/maps">World Map</a></li>
+							<li><a href="/minecraft/gallery/inspiration">Inspiration</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://www.reddit.com/r/modeconkeyserver">Sub-Reddit</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<div id="featured">
+				<img src="ext/images/feature001.png" alt="" />
+				<img src="ext/images/feature002.png" alt="" />
+				<img src="ext/images/feature004.png" alt="" />
+				<img src="ext/images/feature005.png" alt="" />
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="four columns">
+			<div id="connectBox">
+				<h3>Stay Connected</h3>
+				<p>Stay connected with the happenings on the server by joining our <a href="http://www.facebook.com/groups/tylersmcserver/">Facebook</a> group.</p>
+				<p>Become a follower of the <a href="http://news.modeconkey.com/">News</a> page through Tumblr to get the updates as they come out.</p>
+				<p>Become a member of the <a href="http://www.modeconkey.com/forum/">Minecraft Hub forums</a>.  Just make an account, and request to join the group: "Minecraft," to gain exclusive access.</p>
+				<p>Join us on the TeamSpeak server for some voice chatting.  Great for building projects, and just talking!  Download the <a href="http://www.teamspeak.com/?page=downloads">TeamSpeak Client</a> and connect to the server at <em>ts.modeconkey.com</em></p>
+			</div>
+		</div>
+		<div class="four columns">
+			<div id="siteNews">
+				<h3>Recent News</h3>
+				<script type="text/javascript">
+				(function(d,e){var  e=+e||10,
+				a=document.getElementsByTagName("script"),
+				a=a[a.length-1],b=document.createElement("div");
+				a.parentNode.appendChild(b);b.setAttribute("class","widget");
+				b.setAttribute("id","TumblrRecentPosts");a=document.createElement("script");
+				a.src="http://"+d+"/api/read/json";a.onload=function(){if(tumblr_api_read){
+				for(var a=tumblr_api_read.posts,c,d=Math.min(a.length,e),f="<ul>",g=0;
+				g<d;++g)c=a[g],f+="<li><a href='"+(c["url-with-slug"]||c.url)+"'>"+
+				c["regular-title"]+"</a></li>";b.innerHTML= f}};
+				document.body.appendChild(a)})
+				("minecrafthub.tumblr.com",7); 
+				</script>
+			</div>
+		</div>
+		<div class="four columns">
+			<div id="siteShout" class="panel callout radius">
+				<h3>Log On</h3>
+				<p>Get <a href="https://docs.google.com/spreadsheet/viewform?formkey=dF85cUk3cVpoVER3dXFFbXFQOWk2QkE6MQ">white-listed</a> and log on at:</p>
+				<p id="ip">mc.modeconkey.com</p>
+			</div>
+		</div>
+		<div class="twelve columns">
+			<div class="footer">
+				<p>Created by Jack Ketcham 2012</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
