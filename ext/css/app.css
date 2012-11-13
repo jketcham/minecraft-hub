@@ -80,6 +80,9 @@ h3 {
 #ip {
   font-weight: bold;
 }
+.widget ul {
+  line-height: 2;
+}
 .panel.callout {
   color: rgb(34, 34, 34);
   text-align: center;
