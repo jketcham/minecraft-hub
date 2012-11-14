@@ -55,7 +55,13 @@ h3 {
   background:  center center #f4f4f4; height: 414px; 
 }
 #featured img { display: none; }
-#featured.orbit { background: none; }
+#featured.orbit { 
+  background: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
+  box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
+}
 #featured.orbit img { display: block; }
 #headline {
   text-align: right;
@@ -69,6 +75,8 @@ h3 {
 }
 #siteShout {
   font-family: 'Fredoka One';
+  -webkit-box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
+  box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
 }
 #siteShout p {
   font-size: 18px;
