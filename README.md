@@ -8,4 +8,5 @@ any errors or if you have suggestions just make an issue or pull request and it 
 reviewed.
 
 Using code from [PHP Minecraft Query](https://github.com/xPaw/PHP-Minecraft-Query),  [Foundation](https://github.com/zurb/foundation) and [tweet](https://github.com/seaofclouds/tweet).
+
 Made with love by Jack Ketcham
