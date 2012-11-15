@@ -7,6 +7,5 @@ Feel free to look things over, maybe you'll find something useful. Of course if 
 any errors or if you have suggestions just make an issue or pull request and it will be
 reviewed.
 
-Using code from [PHP Minecraft Query](https://github.com/xPaw/PHP-Minecraft-Query) and [Foundation](https://github.com/zurb/foundation).
-
+Using code from [PHP Minecraft Query](https://github.com/xPaw/PHP-Minecraft-Query),  [Foundation](https://github.com/zurb/foundation) and [tweet](https://github.com/seaofclouds/tweet).
 Made with love by Jack Ketcham
