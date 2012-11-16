@@ -6,7 +6,6 @@
 -----------------------------------------------------
 :: Shared-Styles
 :: Home-Page
-:: Gallery-Page
 :: Server-Page
 */
 
@@ -19,10 +18,10 @@
 ----------------------------------------- */ 
 header {
   margin-bottom: 25px;
-}
-header h2 {
-  font-family: 'Press Start 2P', cursive;
-  color: rgb(39, 39, 39);
+  h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(39, 39, 39);
+  }
 }
 h3 {
   font-family: 'Fredoka One', cursive;  
@@ -33,15 +32,15 @@ h3 {
 .nav-bar {
   background: rgb(160, 160, 160);
   margin-top: 15px;
-}
-.nav-bar li:hover {
-  background: rgb(192, 107, 69);
+  li:hover {
+    background: rgb(192, 107, 69);
+  }
 }
 .footer {
   text-align: center;
-}
-.footer p {
-  font-size: 11px;
+  p {
+    font-size: 11px;
+  }
 }
 
 
@@ -52,22 +51,26 @@ h3 {
   $Home-Page
 ------------------------------------------------------------------------------*/
 #featured { 
-  background:  center center #f4f4f4; height: 414px; 
+  background:  center center #f4f4f4; height: 414px;
+  img { 
+    display: none; 
+  }
+  .orbit { 
+    background: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
+    box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
+    img {
+      display: block; 
+    }
+  }
 }
-#featured img { display: none; }
-#featured.orbit { 
-  background: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
-  box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
-}
-#featured.orbit img { display: block; }
 #headline {
   text-align: right;
-}
-#headline h2 {
-  font-family: 'Fredoka One', cursive;
+  h2 {
+    font-family: 'Fredoka One', cursive;
+  }
 }
 #deck {
   text-align: right;
@@ -77,13 +80,13 @@ h3 {
   font-family: 'Fredoka One';
   -webkit-box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
   box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
-}
-#siteShout p {
-  font-size: 18px;
-  font-style: italic;
-}
-#siteShout a {
-  font-weight: bold;
+  p {
+    font-size: 18px;
+    font-style: italic;
+  }
+  a {
+    font-weight: bold;
+  }
 }
 #ip {
   font-weight: bold;
@@ -94,9 +97,9 @@ h3 {
 .panel.callout {
   color: rgb(34, 34, 34);
   text-align: center;
-}
-.panel.callout a:hover {
-  color: black;
+  a:hover {
+    color: black;
+  }
 }
 #siteNews {
   display: block;
@@ -113,51 +116,8 @@ h3 {
 
 
 /*------------------------------------------------------------------------------
-  $Gallery-Page
-------------------------------------------------------------------------------*/
-.module>.holder {
-  margin: 15px;
-  padding: 25px;
-  border: 1px solid rgb(221, 221, 221);
-}
-.nailthumb-container {
-  -webkit-transform: scale(0.2);
-  -webkit-transform-origin: 0% 0%;
-  -moz-transform: scale(0.2);
-  -moz-transform-origin: 0% 0%;
-  -o-transform: scale(0.2);
-  -o-transform-origin: 0% 0%;
-  -ms-transform: scale(0.2);
-  -ms-transform-origin: 0% 0%;
-  transform: scale(0.2);
-  transform-origin: 0% 0%;
-}
-.square-thumb {
-  margin-top: -500px;
-}
-.nailthumb-container img {
-    float: left;
-    display: block;
-    -moz-transition: opacity .3s linear;
-    -webkit-transition: opacity .3s linear;
-    -ms-transition: opacity .3s linear;
-    -o-transition: opacity .3s linear;
-    transition: opacity .3s linear;
-  }
-
-.nailthumb-container img:hover {
-  opacity: .5;
-  cursor: pointer;
-}
-
-
-
-
-
-/*------------------------------------------------------------------------------
   $Server-Page
 ------------------------------------------------------------------------------*/
-
 table p {
   margin-top: 10px;
 }
@@ -165,9 +125,6 @@ table p {
   margin-left: 10px;
   position: absolute;
   margin-top: 10px;
-}
-.player_skin {
-
 }
 #online {
   background: #88c045;
@@ -198,9 +155,9 @@ table p {
   background: rgb(238, 238, 238);
   margin-top: 10px;
   border: 1px solid rgb(221, 221, 221);
-}
-.stats button {
-  float: left;
+  button {
+    float: left;
+  }
 }
 #rules {
   width: 50%;
@@ -216,57 +173,53 @@ table p {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  >.inner{
+    padding:12px;
+    border:1px solid #ddd;
+    background:#fafafa;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+  }
+  em.paren-note{
+    font-style:normal;
+    color:#444;
+  }
+  p:last-child{
+    margin-bottom:0;
+  }
+  h2{
+    margin:0 0 8px -8px;
+    width:100%;
+    padding:0 8px 8px 8px;
+    font-size:14px;
+    color:#333;
+    border-bottom:1px solid #ddd;
+    text-shadow: #fff 1px 1px 0;
+    + p{
+      margin-top:0;
+    }
+    .twitter{
+      background:url(ext/images/twitter_logo2.png) 95% 0 no-repeat;
+    }
+  }
+  h3{
+    margin:0 0 -0.75em 0;
+    font-size:13px;
+  }
 }
-.module>.inner{
-  padding:12px;
-  border:1px solid #ddd;
-  background:#fafafa;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
-}
-.module h2{
-  margin:0 0 8px -8px;
-  width:100%;
-  padding:0 8px 8px 8px;
-  font-size:14px;
-  color:#333;
-  border-bottom:1px solid #ddd;
-  text-shadow: #fff 1px 1px 0;
-
-}
-.module h2.twitter{
-  background:url(ext/images/twitter_logo2.png) 95% 0 no-repeat;
-}
-.module h2 + p{
-  margin-top:0;
-}
-.module p:last-child{
-  margin-bottom:0;
-}
-.module em.paren-note{
-  font-style:normal;
-  color:#444;
-}
-.module h3{
-  margin:0 0 -0.75em 0;
-  font-size:13px;
-}
-.module strong{
-  color:#333;
-}
-.module .tweet{
+.tweet{
   margin-left:-8px;
   width:100%;
   padding:0 8px;
   border-top:1px solid #ddd;
+  p.meta{
+    margin:-10px 0 10px 0;
+    text-align:right;
+  }
 }
-.module #tweets>.tweet:first-child{
+#tweets>.tweet:first-child{
   border-top:none;
-}
-.module .tweet p.meta{
-  margin:-10px 0 10px 0;
-  text-align:right;
 }
 .tweet_list {
   -webkit-border-radius: 0.5em;
@@ -275,26 +228,25 @@ table p {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-  
-.tweet_list li {
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 1em;
-  list-style-type: none;
-  margin-left:-8px;
-  width:100%;
-  border-top:1px solid #ddd;
+  li {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1em;
+    list-style-type: none;
+    margin-left:-8px;
+    width:100%;
+    border-top:1px solid #ddd;
+  }
+  li:first-child {
+    border-top:none;
+  }
 }
 .tweet_time {
   margin:-10px 0 10px 0;
   text-align: right;
-}
-.tweet_time a {
-  color:#444;
-  text-decoration:underline;
-  float: right;
-}
-.tweet_list li:first-child {
-  border-top:none;
+  a {
+    color:#444;
+    text-decoration:underline;
+    float: right;
+  }
 }
