@@ -45,3 +45,11 @@
 @import "foundation/components/modules/orbit";
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
+
+// Overrides
+a:hover {
+	color: #636363;
+}
+body {
+	background: whiteSmoke;
+}
