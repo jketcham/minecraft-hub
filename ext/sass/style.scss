@@ -173,7 +173,7 @@ table p {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  >.inner{
+  &>.inner{
     padding:12px;
     border:1px solid #ddd;
     background:#fafafa;
@@ -199,7 +199,7 @@ table p {
     + p{
       margin-top:0;
     }
-    .twitter{
+    &.twitter{
       background:url(ext/images/twitter_logo2.png) 95% 0 no-repeat;
     }
   }
@@ -236,9 +236,9 @@ table p {
     margin-left:-8px;
     width:100%;
     border-top:1px solid #ddd;
-  }
-  li:first-child {
-    border-top:none;
+    &:first-child {
+      border-top:none;
+    }
   }
 }
 .tweet_time {
