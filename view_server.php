@@ -39,7 +39,7 @@
     <script src="ext/js/jquery.tweet.js" type="text/javascript"></script>
     <script src="ext/js/jquery.fittext.js" type="text/javascript"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="ext/stylesheets/app.css" />
     <link rel="stylesheet" href="ext/stylesheets/style.css" />
 
