@@ -86,15 +86,15 @@
             <a href="http://modeconkey.com/minecraft"><h2 class="text-center six columns title">Minecraft Hub</h2></a>
 
             <script type="text/javascript">
-                $(".title").fitText(1.5, {maxFontSize: '40px' });
+                $(".title").fitText(1.5, {maxFontSize: '30px' });
             </script>
 
             <nav class="six columns">
                 <ul class="nav-bar">
                     <li>
-                        <a class="current" href="http://www.modeconkey.com/minecraft">Home</a>
+                        <a href="http://www.modeconkey.com/minecraft">Home</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="http://www.modeconkey.com/minecraft/view_server.php">Server</a>
                     </li>
                     <li>
