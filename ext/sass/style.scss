@@ -1,7 +1,7 @@
 /* Mode Conkey's Minecraft Hub */
 /* Lovingly crafted by Jack Ketcham */
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
    $Table-of-Contents
 -----------------------------------------------------
 :: Shared-Styles
@@ -16,7 +16,7 @@
 
 /* -----------------------------------------
    $Shared Styles
------------------------------------------ */ 
+----------------------------------------- */
 header {
   margin-bottom: 25px;
   h2 {
@@ -26,7 +26,7 @@ header {
   }
 }
 h3 {
-  font-family: 'Fredoka One', cursive;  
+  font-family: 'Fredoka One', cursive;
 }
 #fitText {
   display: block;
@@ -52,19 +52,19 @@ h3 {
 /*------------------------------------------------------------------------------
   $Home-Page
 ------------------------------------------------------------------------------*/
-#featured { 
+#featured {
   background:  center center #f4f4f4; height: 414px;
-  img { 
-    display: none; 
+  img {
+    display: none;
   }
-  &.orbit { 
+  &.orbit {
     background: none;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     -webkit-box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
     box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
     img {
-      display: block; 
+      display: block;
     }
   }
 }
@@ -81,7 +81,7 @@ h3 {
 #siteShout {
   font-family: 'Fredoka One';
   -webkit-box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
-  box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
+          box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, .5);
   p {
     font-size: 18px;
     font-style: italic;
@@ -193,8 +193,8 @@ table p {
     border:1px solid #ddd;
     background:#fafafa;
     -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
+       -moz-border-radius:3px;
+            border-radius:3px;
   }
   em.paren-note{
     font-style:normal;
@@ -213,9 +213,6 @@ table p {
     text-shadow: #fff 1px 1px 0;
     + p{
       margin-top:0;
-    }
-    &.twitter{
-      background:url(ext/images/twitter_logo2.png) 95% 0 no-repeat;
     }
   }
   h3{
