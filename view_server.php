@@ -32,7 +32,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-    <title class=".PlayerCount"><?php if ($info === false){ echo '<p>Players: - / -</p>'; }else{ echo '<p>Players: ', $info['players'], ' / ', $info['max_players'], '</p>';  } ?></title>
+    <title class=".PlayerCount"><?php if ($info === false){ echo 'Offline - Server Status'; }else{ echo $info['players'], ' / ', $info['max_players'], 'online - Server Status';  } ?></title>
     <meta name="viewport" content="width=device-width" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
@@ -69,6 +69,7 @@
             {
                 $('.Players').load('core/playerListReload.php').fadeIn("slow");
                 $('.PlayerCount').load('core/playerCountReload.php').fadeIn("slow");
+                $('.titlePlayerCount').load('core/titlePlayerCount.php').fadeIn("slow ");
             }, 100000
         );
     </script>
