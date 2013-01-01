@@ -32,7 +32,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-    <title><?php echo $info['players'] ?></title>
+    <title><?php echo $info['players'] ?> players online</title>
     <meta name="viewport" content="width=device-width" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
