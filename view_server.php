@@ -1,5 +1,5 @@
 <?php
-  
+
     include('core/init.inc.php');
 
     $server_ip = $config['servers']['0'][0];
@@ -32,7 +32,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-    <title>Server Status</title>
+    <title><?php echo $info['players'] ?></title>
     <meta name="viewport" content="width=device-width" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
@@ -70,7 +70,7 @@
                 $('.Players').load('core/playerListReload.php').fadeIn("slow");
                 $('.PlayerCount').load('core/playerCountReload.php').fadeIn("slow");
             }, 100000
-        ); 
+        );
     </script>
 
     <!-- IE Fix for HTML5 Tags -->
@@ -81,7 +81,7 @@
 </head>
 <body>
     <div class="row">
-        
+
         <header class="twelve columns">
             <a href="http://modeconkey.com/minecraft"><h2 class="text-center six columns title">Minecraft Hub</h2></a>
 
@@ -111,8 +111,8 @@
                     <li>
                         <a href="http://www.reddit.com/r/modeconkeyserver">Sub-Reddit</a>
                     </li>
-                </ul>  
-            </nav> 
+                </ul>
+            </nav>
         </header>
     </div>
 
