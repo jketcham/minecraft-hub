@@ -6,7 +6,7 @@
     $server_port = $config['servers']['0'][1];
     $info = fetch_server_info($server_ip, $server_port);
 
-    define( 'MQ_SERVER_NAME', 'Jack\'s Survival Server');
+    define( 'MQ_SERVER_NAME', 'Modeconkey Server');
     define( 'MQ_SERVER_ADDR', 'mc.modeconkey.com' );
     define( 'MQ_SERVER_PORT', 25565 );
     define( 'MQ_TIMEOUT', 1 );
