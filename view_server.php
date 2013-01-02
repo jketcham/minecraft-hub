@@ -32,7 +32,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-    <title class=".PlayerCount">Server Status</title>
+    <title>Server Status</title>
     <meta name="viewport" content="width=device-width" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
