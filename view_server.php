@@ -92,20 +92,20 @@
             <nav class="six columns">
                 <ul class="nav-bar">
                     <li>
-                        <a href="http://www.modeconkey.com/minecraft">Home</a>
+                        <a href="http://www.modeconkey.com/">Home</a>
                     </li>
                     <li class="active">
-                        <a href="http://www.modeconkey.com/minecraft/view_server.php">Server</a>
+                        <a href="http://www.modeconkey.com/view_server.php">Server</a>
                     </li>
                     <li>
                         <a href="http://news.modeconkey.com/">News</a>
                     </li>
                     <li class="has-flyout">
-                        <a href="http://www.modeconkey.com/minecraft/gallery">Gallery</a>
+                        <a href="http://www.modeconkey.com/gallery">Gallery</a>
                         <a href="#" class="flyout-toggle"><span> </span></a>
                         <ul class="flyout">
-                            <li><a href="/minecraft/gallery/maps">World Map</a></li>
-                            <li><a href="/minecraft/gallery/inspiration">Inspiration</a></li>
+                            <li><a href="/gallery/maps">World Map</a></li>
+                            <li><a href="/gallery/inspiration">Inspiration</a></li>
                         </ul>
                     </li>
                     <li>
